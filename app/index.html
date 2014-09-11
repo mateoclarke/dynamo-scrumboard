@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DynamoScrumboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/dynamo-scrumboard.css">
+  </head>
+  <body>
+    <script>
+      window.DynamoScrumboardENV = {{ENV}};
+      window.EmberENV = window.DynamoScrumboardENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/dynamo-scrumboard.js"></script>
+    <script>
+      window.DynamoScrumboard = require('dynamo-scrumboard/app')['default'].create(DynamoScrumboardENV.APP);
+    </script>
+  </body>
+</html>
