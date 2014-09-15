@@ -3,5 +3,12 @@
   <li class='active'>{{name}}</li>
 </ol>
 
+<div class="row">
 {{dynamo-info dynamo=this tagName='div' classNames='col-sm-12 dynamo-info'}}
+</div>
+
+<div class="row color-picker col-sm-2">
+	{{view Ember.Select content=colors value=newColor id="color-select" valueBinding="model.dynamo.color"}}
+	<button {{action "saveColor"}} class="btn btn-success color-confirm">Save</button>
+</div>
 

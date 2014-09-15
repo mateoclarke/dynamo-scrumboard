@@ -46,7 +46,14 @@ html, body {
 	font-size: 1.7em;
 	color: #333;
 }
-
+.color-picker {
+	text-align: center;
+}
+.color-confirm {
+	clear: both;
+	display: block;
+	margin: 5px auto;
+}
 .center {
 	text-align: center;
 }
