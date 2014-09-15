@@ -4,11 +4,24 @@
 </ol>
 
 <div class="row">
-{{dynamo-info dynamo=this tagName='div' classNames='col-sm-12 dynamo-info'}}
+{{dynamo-info dynamo=this tagName='div' classNames='col-sm-2 dynamo-info'}}
+<div class="col-sm-8 dynamo-page-info">
+	{{dynamo-header dynamo=this}}
+	
+	{{#if isEditing}}
+	{{textarea class="form-control" value=note focus-out="acceptChanges" insert-newline="acceptChanges"}}
+	{{else}}
+		<p><strong>Notes: </strong>{{note}}</p>
+	{{/if}}
 </div>
+</div>
+
+
 
 <div class="row color-picker col-sm-2">
 	{{view Ember.Select content=colors value=newColor id="color-select" valueBinding="model.dynamo.color"}}
 	<button {{action "saveColor"}} class="btn btn-success color-confirm">Save</button>
 </div>
-
+<div class="col-sm-8">
+	<button class="btn btn-default pull-right" {{action "editNote"}}>Edit Note</button>
+</div>

@@ -1,10 +1,6 @@
 import Ember from 'ember';
 
 var DynamoInfoComponent = Ember.Component.extend({
-	classNameBindings: ['color'],
-	color: function(){
-		return 'status-' + this.get('dynamo.color');
-	}.property('dynamo.color'),
 	profilePic: function() {
 		return "background:url("+this.get('dynamo.imageUrl')+")";
 	}.property('dynamo.imageUrl'),
@@ -31,9 +27,15 @@ var DynamoInfoComponent = Ember.Component.extend({
 		}		
 		// BLOOD-RED
 		else if ( this.get('dynamo.color') === 'blood-red') {
-			return 'background:rgba(99,8,31,.5)';
+			return 'background:rgba(155,2,2,.5)';
 		}
-	}.property('dynamo.color')
+	}.property('dynamo.color'),
+	// actions: {
+	// 	editNote: function(){
+	// 		console.log('editing note');
+	// 		this.set('isEditing', true);
+	// 	}
+	// }
 });
 
 export default DynamoInfoComponent;
