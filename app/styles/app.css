@@ -1,3 +1,71 @@
 html, body {
   margin: 20px;
 }
+
+.dynamo-group {
+	padding: 0 20%
+}
+.dynamo {
+	float: left;
+	margin: 5px 2%;
+}
+
+.dynamo li {
+	list-style: none;
+}
+
+.dynamo a {
+	text-decoration: none;
+}
+
+.dynamo-header, .dynamo-pic {
+	text-align: center;
+}
+.dynamo-color {	
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.dynamo-color h2 {
+	display: none;
+}
+.dynamo-color:hover h2 {
+	display: block;
+	text-transform: uppercase;
+	padding: 70px 0;
+	color: white;
+	margin: 0;
+}		
+
+.dynamo-pic {
+	width: 167px;
+	height: 174px;
+	border-radius: 50%;
+}
+.dynamo-info p {
+	font-size: 1.7em;
+	color: #333;
+}
+
+.center {
+	text-align: center;
+}
+
+.status-green {
+	color: #00b159;
+}
+.status-yellow {
+	color: #ffc425;
+}
+.status-red {
+	color: #d11141;
+}
+.status-blood-red {
+	color: #63081f;
+}
+.status-orange {
+	color: #f37735;
+}
+.status-grellow {
+	color: #91f557;
+}

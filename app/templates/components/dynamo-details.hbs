@@ -1,0 +1,10 @@
+  <div class="dynamo-header">
+    <h2 {{bind-attr class="color"}}>{{dynamo.name}}</h2>
+  </div>
+  {{#link-to 'dynamo' dynamo}}
+  <div class="dynamo-pic" {{bind-attr style=profilePic}}>
+    <div class="dynamo-color" {{bind-attr style=colorOverlay}}>
+      <h2>{{dynamo.color}}</h2>
+	  </div>
+  </div>
+  {{/link-to}}
