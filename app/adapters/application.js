@@ -1,5 +1,5 @@
 import DS from 'ember-data';
 
-var ApplicationAdapter = DS.FixtureAdapter.extend({});
-
-export default ApplicationAdapter;
+export default DS.FirebaseAdapter.extend({
+  firebase: new window.Firebase('dynamo-scrumboard.firebaseIO.com')
+});
