@@ -1,0 +1,38 @@
+<ol class="breadcrumb">
+  <li>{{#link-to 'dynamos'}}Dynamos{{/link-to}}</li>
+  <li class='active'>New</li>
+</ol>
+
+<div class="row">
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label for="dynamo_name" class="col-sm-2 control-label">Name</label>
+      <div class="col-sm-9">
+        {{input class="form-control" id="dynamo_name" placeholder="" value=newName}}
+      </div>
+    </div>    
+    <div class="form-group">
+      <label for="dynamo_imageUrl" class="col-sm-2 control-label">Image Link</label>
+      <div class="col-sm-9">
+        {{input class="form-control" id="dynamo_imageUrl" placeholder="http://" value=newImageUrl}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="dynamo_notes" class="col-sm-2 control-label">Notes</label>
+      <div class="col-sm-9">
+        {{textarea class="form-control" id="dynamo_notes" value=newNote}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="dynamo_color" class="col-sm-2 control-label">Color</label>
+      <div class="col-sm-2">
+        {{view Ember.Select content=colors class="form-control" id="dynamo_color" value=newColor}}
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-9">
+        <button type="submit" class="btn btn-primary" {{action 'createDynamo'}}>Save New Dynamo</button>
+      </div>
+    </div> 
+  </form>
+</div>
