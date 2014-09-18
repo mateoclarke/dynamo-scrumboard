@@ -1,8 +1,7 @@
 # Dynamo-scrumboard
 
-This README outlines the details of collaborating on this Ember application.
-
-A short introduction of this app could easily go here.
+An app built with Ember.js & Firebase to keep a live view of each dynamo's scrum color.
+[live on heroku](http://dynamo-scrumboard.herokuapp.com/)
 
 ## Prerequisites
 
@@ -13,7 +12,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/mateoclarke/dynamo-scrumboard.git`
 * change into the new directory
 * `npm install`
 * `bower install`
@@ -27,19 +26,7 @@ You will need the following things properly installed on your computer.
 
 Make use of the many generators for code, try `ember help generate` for more details
 
-### Running Tests
 
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
