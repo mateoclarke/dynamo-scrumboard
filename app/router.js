@@ -6,7 +6,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function(){
   this.resource('dynamos', {path: '/'});
-  this.resource('dynamo', {path: '/dynamos/:dynamo_id'});
+  this.resource('dynamo', {path: '/dynamos/:name'});
 	this.route('new');
 });
 

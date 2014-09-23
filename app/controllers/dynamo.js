@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 var DynamoController = Ember.ObjectController.extend({
-	colors: ['red', 'yellow', 'green', 'orange', 'grellow', 'blood-red'],
+	colors: ['red', 'yellow', 'green', 'orange', 'grellow', 'blood-red', 'out'],
 	actions: {
 		saveColor: function(){
 			var color = this.get('newColor');

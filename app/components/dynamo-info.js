@@ -29,13 +29,11 @@ var DynamoInfoComponent = Ember.Component.extend({
 		else if ( this.get('dynamo.color') === 'blood-red') {
 			return 'background:rgba(155,2,2,.5)';
 		}
+		// GREY
+		else if ( this.get('dynamo.color') === 'out') {
+			return 'background:rgba(204, 204, 204,.75);';
+		}
 	}.property('dynamo.color'),
-	// actions: {
-	// 	editNote: function(){
-	// 		console.log('editing note');
-	// 		this.set('isEditing', true);
-	// 	}
-	// }
 });
 
 export default DynamoInfoComponent;

@@ -32,6 +32,10 @@ var DynamoDetailsComponent = Ember.Component.extend({
 		// BLOOD-RED
 		else if ( this.get('dynamo.color') === 'blood-red') {
 			return 'background:rgba(99,8,31,.5)';
+		}		
+		// GREY
+		else if ( this.get('dynamo.color') === 'out') {
+			return 'background:rgba(204, 204, 204,.75);';
 		}
 	}.property('dynamo.color')
 });
