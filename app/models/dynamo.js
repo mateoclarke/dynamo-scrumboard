@@ -4,7 +4,9 @@ var Dynamo = DS.Model.extend({
 	name: DS.attr('string'),
 	imageUrl: DS.attr('string'),
 	color: DS.attr('string'),
-	note: DS.attr('string')
+	note: DS.attr('string'),
+	role: DS.attr('string'),
+	isDeveloper: DS.attr('boolean')
 });
 
 // Dynamo.reopenClass({
