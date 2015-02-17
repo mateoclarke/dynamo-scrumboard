@@ -1,7 +1,7 @@
 # Dynamo-scrumboard
 
 An app built with Ember.js & Firebase to keep a live view of each dynamo's scrum color.
-[live on heroku](http://dynamo-scrumboard.herokuapp.com/)
+[live on heroku](http://mateoclarke.com/work/)
 
 ## Prerequisites
 
